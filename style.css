@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 2vw;
+}
+
+img{
+  width: 10vw;
+}
+
+table{
+  font-family: Arial, sans-serif;
+ 
+  width: 90%;
+  border: 1px solid #777777;
+  border-collapse: collapse;
+  text-align:center;
+
+}
+
+.regtable{ width: 40%;}
+
+
+th  {
+    background-color: #04aa6d;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+input{
+  font-family: Arial, sans-serif;
+ 
+}
+
+button{
+  font-family: Arial, sans-serif;
+  width: 7vw;
+  height: 5vw;
+
+  border-width: 1px;
+  background-color: #0a95ff;
+  border-color: #0a55df;
+  border-radius: 5px;
+}
+
+
+
+
+#message{
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 30%;
+  height: 20%;
+  background-color: rgba(215, 215, 215, .75);  
+  backdrop-filter: blur(5px);
+  border: solid;
+  border-color: black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px #888888;
+  display:none;
+  justify-content:center;
+  align-items:center;
+}
+
+
+
+#message-close-button{
+  position: absolute;
+  bottom: 5;
+}
+
+nav{
+  width: 90%;
+  background-color: #82c0f0;
+  border: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+
+/* dla ekranów o szerokości > 900 */
+@media only screen and (min-device-width: 900px) {
+  * {font-size: 0.8vw;}
+  button {   width: 4vw;height: 2vw;}
+  table {width: 70%;}
+  .regtable{ width: 20%;}
+  .admin-menu-table{ width: 30%;}
+  #message {  top: 20%;left: 40%; width: 20%;height: 30%;}
+  nav{    width: 50%;  }
+  
+}
+
